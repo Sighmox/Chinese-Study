@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		79A9A04222542C6800E74BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A04122542C6800E74BF9 /* AppDelegate.swift */; };
-		79A9A04422542C6800E74BF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A04322542C6800E74BF9 /* ViewController.swift */; };
 		79A9A04722542C6800E74BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A9A04522542C6800E74BF9 /* Main.storyboard */; };
 		79A9A04922542C6900E74BF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A9A04822542C6900E74BF9 /* Assets.xcassets */; };
 		79A9A04C22542C6900E74BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A9A04A22542C6900E74BF9 /* LaunchScreen.storyboard */; };
 		79A9A05722542C6A00E74BF9 /* Chinese_StudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A05622542C6A00E74BF9 /* Chinese_StudyTests.swift */; };
 		79A9A06222542C6A00E74BF9 /* Chinese_StudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A06122542C6A00E74BF9 /* Chinese_StudyUITests.swift */; };
+		79A9A07022542CD300E74BF9 /* CharactersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A06F22542CD300E74BF9 /* CharactersCollectionViewController.swift */; };
+		79A9A07222542D2D00E74BF9 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A07122542D2D00E74BF9 /* CharacterCell.swift */; };
+		79A9A07422542FFE00E74BF9 /* Char.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A07322542FFE00E74BF9 /* Char.swift */; };
+		79A9A0762254301B00E74BF9 /* CharacterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A0752254301B00E74BF9 /* CharacterStore.swift */; };
+		79A9A0782254335000E74BF9 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9A0772254334F00E74BF9 /* TranslationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		79A9A03E22542C6800E74BF9 /* Chinese Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chinese Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9A04122542C6800E74BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79A9A04322542C6800E74BF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79A9A04622542C6800E74BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79A9A04822542C6900E74BF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79A9A04B22542C6900E74BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		79A9A05D22542C6A00E74BF9 /* Chinese StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chinese StudyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9A06122542C6A00E74BF9 /* Chinese_StudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chinese_StudyUITests.swift; sourceTree = "<group>"; };
 		79A9A06322542C6A00E74BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A9A06F22542CD300E74BF9 /* CharactersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewController.swift; sourceTree = "<group>"; };
+		79A9A07122542D2D00E74BF9 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		79A9A07322542FFE00E74BF9 /* Char.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Char.swift; sourceTree = "<group>"; };
+		79A9A0752254301B00E74BF9 /* CharacterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStore.swift; sourceTree = "<group>"; };
+		79A9A0772254334F00E74BF9 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,13 @@
 		79A9A04022542C6800E74BF9 /* Chinese Study */ = {
 			isa = PBXGroup;
 			children = (
+				79A9A0752254301B00E74BF9 /* CharacterStore.swift */,
+				79A9A07322542FFE00E74BF9 /* Char.swift */,
 				79A9A04122542C6800E74BF9 /* AppDelegate.swift */,
-				79A9A04322542C6800E74BF9 /* ViewController.swift */,
 				79A9A04522542C6800E74BF9 /* Main.storyboard */,
+				79A9A0772254334F00E74BF9 /* TranslationViewController.swift */,
+				79A9A07122542D2D00E74BF9 /* CharacterCell.swift */,
+				79A9A06F22542CD300E74BF9 /* CharactersCollectionViewController.swift */,
 				79A9A04822542C6900E74BF9 /* Assets.xcassets */,
 				79A9A04A22542C6900E74BF9 /* LaunchScreen.storyboard */,
 				79A9A04D22542C6A00E74BF9 /* Info.plist */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79A9A04422542C6800E74BF9 /* ViewController.swift in Sources */,
+				79A9A07022542CD300E74BF9 /* CharactersCollectionViewController.swift in Sources */,
+				79A9A0762254301B00E74BF9 /* CharacterStore.swift in Sources */,
+				79A9A0782254335000E74BF9 /* TranslationViewController.swift in Sources */,
 				79A9A04222542C6800E74BF9 /* AppDelegate.swift in Sources */,
+				79A9A07222542D2D00E74BF9 /* CharacterCell.swift in Sources */,
+				79A9A07422542FFE00E74BF9 /* Char.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
